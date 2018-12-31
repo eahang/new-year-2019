@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app='app'
+  ng-clock>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+  <title>Count Down</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="main.css" />
+</head>
+
+<body ng-controller="appController">
+
+  <div class="container">
+    <div>
+      <h1 class="header">Count Down</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th> Days </th>
+            <th> Hour </th>
+            <th> Minute </th>
+            <th> Second </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="current-time">{{currentDayTime.days}}</td>
+            <td class="current-time">{{currentDayTime.hours}}</td>
+            <td class="current-time">{{currentDayTime.minutes}}</td>
+            <td class="current-time">{{currentDayTime.seconds}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="canvas"
+      ng-show="isNewYear">
+      <canvas id="myCanvas"
+        width="700"
+        height="500">
+      </canvas>
+
+    </div>
+  </div>
+
+  <script src="./libs/moment.min.js"></script>
+  <script src="./libs/angular/angular.min.js"></script>
+  <script src="./libs/angular/angular-animate.min.js"></script>
+  <script src="./libs/angular/angular-aria.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

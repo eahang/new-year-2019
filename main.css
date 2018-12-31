@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: auto;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.header {
+  text-decoration: underline;
+  padding-bottom: 50px;
+}
+
+.current-time {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.table tr td, .table tr th{
+  width: 120px;
+}
+.canvas {
+  margin-top: 50px;
+}
