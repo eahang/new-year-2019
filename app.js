@@ -17,10 +17,10 @@ angular.module('app', [
       var diff = newYear - currentTime;
       if (diff > 0) {
         var duration = moment.duration(diff, 'seconds')
-        $scope.currentDayTime.days = padNum(moment.duration(duration.days()));
-        $scope.currentDayTime.hours = padNum(moment.duration(duration.hours()));
-        $scope.currentDayTime.minutes = padNum(moment.duration(duration.minutes()));
-        $scope.currentDayTime.seconds = padNum(moment.duration(duration.seconds()));
+        $scope.currentDayTime.days = padNum(moment.duration(duration).days());
+        $scope.currentDayTime.hours = padNum(moment.duration(duration).hours());
+        $scope.currentDayTime.minutes = padNum(moment.duration(duration).minutes());
+        $scope.currentDayTime.seconds = padNum(moment.duration(duration).seconds());
       } else {
         $scope.isNewYear = true;
         $interval.cancel(interval);
