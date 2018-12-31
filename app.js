@@ -3,7 +3,7 @@ angular.module('app', [
 ]).controller('appController', [
   '$scope', '$interval',
   function ($scope, $interval) {
-    var newYear = moment('2018-12-31 12:59:59', 'YYYY-MM-DD HH:mm:ss').unix();
+    var newYear = moment('2018-12-31 23:59:59', 'YYYY-MM-DD HH:mm:ss').unix();
     $scope.isNewYear = false;
     $scope.currentDayTime = {
       days: "00",
